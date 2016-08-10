@@ -15,6 +15,13 @@
 		#images img{display: inline-block;
 			margin-bottom: 0px; 
 			width: 100%;}
+		p, fieldset {position: relative;
+			text-align: justify;
+			width: 40%;
+			margin: 0 auto;
+			font-size: 20px;
+			line-height: 1.2em;
+			background: rgba(242,119,176,0.55);}
 		</style>
 </head>
 <body>
@@ -31,6 +38,46 @@
 		</ul>
 	</div>
 
+	<p>Get tons of meaningless updates!:</p>
+	<br>
+	<form method="post" action="/post.html">
+		<p>
+			<label>
+				Name:
+				<input type="nam" name="name">
+			</label>
+		</p>
+		<p>
+			<label>
+				Telephone:
+				<input type="tel" name="tele">
+			</label>
+		</p>
+		<p>
+			<label>
+				Email:
+				<input type="ema" name="email">
+			</label>
+		</p>
+		<fieldset>
+			<legend>Do you like vaporwave</legend>
+			<p>
+				<label>
+					<input type="radio" name="size" value="yes">
+					Yes
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="size" value="yes">
+					Yes
+				</label>
+			</p>
+		</fieldset>
+		<p>
+			<button>Submit</button>
+		</p>
+	</form>
 
 </body>
 </html>
