@@ -5,46 +5,32 @@
 	<style>
 		body {background-image: url(images/bg.jpg);
 			background-attachment: fixed;}
-		.row,
-		.row > div {box-sizing: border-box;}
-		.row {content: "";
-			display: table;
-			clear: both;}
-		
-		.col-narrow {height: 500px;
-			width: 100px; 
-			overflow: hidden; 
-			float: left;
-			background-color: green;}
-		.col-narrow img {width: 100%;}
-		.col-large img {width: 100%;}
-		.col-large {height: 1000px;
-			width: 200px; 
-			overflow: hidden; 
-			float: left;
-			background-color: blue;}
-		video {width: 40%;}
+		#container{width: 1200px;
+			margin: 0 auto;}
+		ul{list-style-type: none;
+			}
+		#images{column-count: 2;
+			column-gap: 0;
+			width: 1200px;}
+		#images img{display: inline-block;
+			margin-bottom: 0px; 
+			width: 100%;}
 		</style>
 </head>
 <body>
-	<div class="row">
-		<div class="col-narrow">
-			<div><img src="images/suicide.jpg"></div>
-			<div><img src="images/mask.jpg"></div>
-		</div>
-		<div class="col-large"><img src="images/aim.jpg"></div>
+	<div id="container">
+		<ul id="images">
+			<li><img src="images/suicide.jpg"></li>
+			<li><img src="images/mask.jpg"></li>
+			<li><img src="images/aim.jpg"></li>
+			<li><img src="images/arizona.jpg"></li>
+			<li><img src="images/select.gif"></li>
+			<li><img src="images/birth_of_the_universe.png"></li>
+			<li><img src="images/palmtree.png"></li>
+			<li><img src="images/vaporwave-films.jpg"></li>
+		</ul>
 	</div>
 
 
-	<!-- <div class="pic_wrap">
-		<div class="grid" id="pic"><img src="images/birth_of_the_universe.png"></div>
-		<div class="grid" id="pic"><img src="images/select.gif"></div>
-		<div class="grid" id="pic"><img src="images/arizona.jpg"></div>
-		<div class="grid" id="pic"><img src="images/aim.jpg"></div>
-		<div class="grid" id="pic"><img src="images/mask.jpg"></div>
-		<div class="grid" id="pic"><img src="images/suicide.jpg"></div>
-	</div> -->
-
-	<!-- <div class="wrap"><video controls><source src="images/sunday_school.mp4" type="video/mp4"></video></div> -->
 </body>
 </html>
