@@ -6,22 +6,39 @@
 		body {background-image: url(images/bg.jpg);
 			background-attachment: fixed;}
 		#container{width: 1200px;
-			margin: 0 auto;}
-		ul{list-style-type: none;
-			}
+			position: relative;
+			margin-left: -600px;
+			left: 50%;}
+		ul{list-style-type: none;}
 		#images{column-count: 2;
 			column-gap: 0;
 			width: 1200px;}
 		#images img{display: inline-block;
 			margin-bottom: 0px; 
 			width: 100%;}
+
 		p, fieldset {position: relative;
 			text-align: justify;
-			width: 40%;
+			width: 50%;
 			margin: 0 auto;
 			font-size: 20px;
 			line-height: 1.2em;
 			background: rgba(242,119,176,0.55);}
+
+		footer {width: 100%;
+			background: rgba(242,119,176,0.55);}
+		.foot {width: 100%;
+			padding-top: 10px;
+			margin: 0 auto;}
+		.note {position: relative;
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			font-size: 20px;
+			line-height: 1.2em;
+			color: #e3e1e4;
+			opacity: .25;
+			letter-spacing: 25px;}
 		</style>
 </head>
 <body>
@@ -38,46 +55,60 @@
 		</ul>
 	</div>
 
-	<p>Get tons of meaningless updates!:</p>
-	<br>
-	<form method="post" action="/post.html">
-		<p>
-			<label>
-				Name:
-				<input type="nam" name="name">
-			</label>
-		</p>
-		<p>
-			<label>
-				Telephone:
-				<input type="tel" name="tele">
-			</label>
-		</p>
-		<p>
-			<label>
-				Email:
-				<input type="ema" name="email">
-			</label>
-		</p>
-		<fieldset>
-			<legend>Do you like vaporwave</legend>
+
+	<div id="container">
+		<p>Beam me <a href="index.html">back</a>, dude</p>
+		<br>
+		<br>
+		<br>
+		<p>Get tons of meaningless updates!:</p>
+		<br>
+		<form method="post" action="post.html">
 			<p>
 				<label>
-					<input type="radio" name="size" value="yes">
-					Yes
+					Name:
+					<input type="nam" name="name">
 				</label>
 			</p>
 			<p>
 				<label>
-					<input type="radio" name="size" value="yes">
-					Yes
+					Telephone:
+					<input type="tel" name="tele">
 				</label>
 			</p>
-		</fieldset>
-		<p>
-			<button>Submit</button>
-		</p>
-	</form>
+			<p>
+				<label>
+					Email:
+					<input type="ema" name="email">
+				</label>
+			</p>
+			<fieldset>
+				<legend>Do you like vaporwave</legend>
+				<p>
+					<label>
+						<input type="radio" name="size" value="yes">
+						Yes
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="size" value="yes">
+						Yes
+					</label>
+				</p>
+			</fieldset>
+			<p>
+				<button>Submit</button>
+			</p>
+		</form>
+		</div>
 
 </body>
+
+<footer>
+	<div class="foot">
+		<div class="note">This site was made listening entirely to vaporwave.</div>
+	</div>
+</footer>
+
 </html>
