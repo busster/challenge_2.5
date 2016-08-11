@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VaporArt</title>
+	<style>
+		body {background-image: url(images/bg.jpg);
+			background-attachment: fixed;}
+		#container{width: 1200px;
+			position: relative;
+			margin-left: -600px;
+			left: 50%;}
+		ul{list-style-type: none;}
+		#images{column-count: 2;
+			column-gap: 0;
+			width: 1200px;}
+		#images img{display: inline-block;
+			margin-bottom: 0px; 
+			width: 100%;}
+
+		p, fieldset {position: relative;
+			text-align: justify;
+			width: 50%;
+			margin: 0 auto;
+			font-size: 20px;
+			line-height: 1.2em;
+			background: rgba(242,119,176,0.55);}
+
+		footer {width: 100%;
+			background: rgba(242,119,176,0.55);}
+		.foot {width: 100%;
+			padding-top: 10px;
+			margin: 0 auto;}
+		.note {position: relative;
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			font-size: 20px;
+			line-height: 1.2em;
+			color: #e3e1e4;
+			opacity: .25;
+			letter-spacing: 25px;}
+		</style>
+</head>
+<body>
+	<div id="container">
+		<ul id="images">
+			<li><img src="images/suicide.jpg"></li>
+			<li><img src="images/mask.jpg"></li>
+			<li><img src="images/aim.jpg"></li>
+			<li><img src="images/arizona.jpg"></li>
+			<li><img src="images/select.gif"></li>
+			<li><img src="images/birth_of_the_universe.png"></li>
+			<li><img src="images/palmtree.png"></li>
+			<li><img src="images/vaporwave-films.jpg"></li>
+		</ul>
+	</div>
+
+
+	<div id="container">
+		<p>Beam me <a href="index.html">back</a>, dude</p>
+		<br>
+		<br>
+		<br>
+		<p>Get tons of meaningless updates!:</p>
+		<br>
+		<form method="post" action="post.html">
+			<p>
+				<label>
+					Name:
+					<input type="nam" name="name">
+				</label>
+			</p>
+			<p>
+				<label>
+					Telephone:
+					<input type="tel" name="tele">
+				</label>
+			</p>
+			<p>
+				<label>
+					Email:
+					<input type="ema" name="email">
+				</label>
+			</p>
+			<fieldset>
+				<legend>Do you like vaporwave</legend>
+				<p>
+					<label>
+						<input type="radio" name="size" value="yes">
+						Yes
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="size" value="yes">
+						Yes
+					</label>
+				</p>
+			</fieldset>
+			<p>
+				<button>Submit</button>
+			</p>
+		</form>
+		</div>
+
+</body>
+
+<footer>
+	<div class="foot">
+		<div class="note">This site was made listening entirely to vaporwave.</div>
+	</div>
+</footer>
+
+</html>
