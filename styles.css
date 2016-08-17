@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	z-index: 1;
 }
 
 
@@ -10,6 +11,34 @@ body {
 	font-size: 16px;
 	font-family: 'Ubuntu', sans-serif;
 }
+#error {
+	z-index: 10;
+	background-image: url(images/bsod.png);
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	height: 100vh;
+	width: 100%;
+	-webkit-animation-name: error;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	animation-name: error;
+	animation-duration: 90s;
+	animation-iteration-count: infinite;
+}
+#colors {
+	z-index: 0;
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	opacity: .15;
+	height: 100vh;
+	width: 100%;
+	-webkit-animation: blink 30s linear infinite;
+	animation: blink 30s linear infinite;
+}
+
+
 h1 {
 	text-align: center;
 	margin: 20px auto;
@@ -22,10 +51,11 @@ h1 {
 	text-align: justify;
 	width: 95%;
 	margin: 0 auto;
+	border-radius: 10px;
 	padding: 10px;
 	font-size: 1em;
 	line-height: 1.5em;
-	background: rgba(242,119,176,0.55);
+	background: rgba(242,119,176,0.25);
 }
 .paragraph p {
 	margin: 0 0;
@@ -37,7 +67,7 @@ h1 {
 	position: relative;
 	margin: 10px auto;
 	height: auto;
-	width: 80%;
+	max-width: 900px;
 }
 .image img {
 	display: block;
@@ -67,3 +97,78 @@ a:hover {
 }
 
 
+.vapor-text {
+	position: relative;
+	height: 900px;
+	max-width: 900px;
+	margin: 10px auto;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 2.5em;
+	font-weight: normal;
+}
+
+.vapor-text#main {
+
+}
+
+.vapor-text #top {
+	color: black;
+	/*opacity: .15;*/
+	width: 100%;
+	left: 0;
+	top: 0;
+	border: 1px solid green;
+}
+
+
+
+
+
+
+@-webkit-keyframes blink {
+	0% {background: violet;}
+	14% {background: indigo;}
+	28% {background: blue;}
+	42% {background: green;}
+	57% {background: yellow;}
+	72% {background: orange;}
+	85% {background: red;}
+	100% {background: violet;}
+}
+
+@keyframes blink {
+	0% {background: violet;}
+	14% {background: indigo;}
+	28% {background: blue;}
+	42% {background: green;}
+	57% {background: yellow;}
+	72% {background: orange;}
+	85% {background: red;}
+	100% {background: violet;}
+}
+
+@-webkit-keyframes error {
+	0% {opacity: 0;}
+	69.9% {opacity: 0;}
+	70% {opacity: 1;}
+	70.09% {opacity: 1;}
+	70.1% {opacity: 0;}
+	70.3% {opacity: 0;}
+	70.5% {opacity: 1;}
+	71.3% {opacity: 1;}
+	71.4% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes error {
+	0% {opacity: 0;}
+	69.9% {opacity: 0;}
+	70% {opacity: 1;}
+	70.09% {opacity: 1;}
+	70.1% {opacity: 0;}
+	70.3% {opacity: 0;}
+	70.5% {opacity: 1;}
+	71.3% {opacity: 1;}
+	71.4% {opacity: 0;}
+	100% {opacity: 0;}
+}
