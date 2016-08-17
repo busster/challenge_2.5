@@ -1,65 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<title>VaporArt</title>
-	<style>
-		body {background-image: url(images/bg.jpg);
-			background-attachment: fixed;}
-		.container{width: 1200px;
-			position: relative;
-			margin-left: -600px;
-			left: 50%;}
-		ul{list-style-type: none;}
-		#images{column-count: 2;
-			column-gap: 0;
-			width: 1200px;}
-		#images img{display: inline-block;
-			margin-bottom: 0px; 
-			width: 100%;}
-
-		p, fieldset {position: relative;
-			text-align: justify;
-			width: 50%;
-			margin: 0 auto;
-			font-size: 20px;
-			line-height: 1.2em;
-			background: rgba(242,119,176,0.55);}
-
-		footer {width: 100%;
-			background: rgba(242,119,176,0.55);}
-		.foot {width: 100%;
-			padding-top: 10px;
-			margin: 0 auto;}
-		.note {position: relative;
-			text-align: center;
-			width: 100%;
-			margin: 0 auto;
-			font-size: 20px;
-			line-height: 1.2em;
-			color: #e3e1e4;
-			opacity: .25;
-			letter-spacing: 25px;}
-		</style>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<ul id="images">
-			<li><img src="images/suicide.jpg" alt="hooded figure"></li>
-			<li><img src="images/mask.jpg" alt="she was really never there"></li>
-			<li><img src="images/aim.jpg" alt="aol instant messenger"></li>
-			<li><img src="images/arizona.jpg" alt="arizona ice tea"></li>
-			<li><img src="images/select.gif" alt="statue in selection"></li>
-			<li><img src="images/birth_of_the_universe.png" alt="birth of the universe"></li>
-			<li><img src="images/palmtree.png" alt="bit art of a palm tree"></li>
-			<li><img src="images/vaporwave-films.jpg" alt="old macintosh computer"></li>
-		</ul>
+	<div id="colors"></div>
+	<h1>Vaporwave Art</h1>
+	<div class="columns">
+			<figure>
+				<div class="vign">
+					<img src="images/suicide.jpg" alt="hooded figure">
+				</div>
+			</figure>
+			<figure>
+				<img src="images/mask.jpg" alt="she was really never there">
+			</figure>
+			<figure>
+				<img src="images/aim.jpg" alt="aol instant messenger">
+			</figure>
+			<figure>
+				<img src="images/arizona.jpg" alt="arizona ice tea">
+			</figure>
+			<figure>
+				<img src="images/select.gif" alt="statue in selection">
+			</figure>
+			<figure>
+				<img src="images/birth_of_the_universe.png" alt="birth of the universe">
+			</figure>
+			<figure>
+				<img src="images/palmtree.png" alt="bit art of a palm tree">
+			</figure>
+			<figure>
+				<img src="images/vaporwave-films.jpg" alt="old macintosh computer">
+			</figure>
 	</div>
 
-
-	<div class="container">
-		<p>Beam me <a href="index.html">back</a>, dude</p>
-		<br>
-		<br>
+	<div class="paragraph">
+		<p>Ummm.... Beam me <a href="index.html">back</a>, dude</p>
 		<br>
 		<p>Get tons of meaningless updates!:</p>
 		<br>
@@ -108,7 +89,4 @@
 	</div>
 </footer>
 </body>
-
-
-
 </html>
