@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	z-index: 1;
+	box-sizing: border-box;
 }
 
 
@@ -40,6 +41,7 @@ body {
 
 
 h1 {
+	position: relative;
 	text-align: center;
 	margin: 20px auto;
 	letter-spacing: 10px;
@@ -163,6 +165,7 @@ li:before {
 	letter-spacing: 10px;
 }
 .quote {
+	position: relative;
 	margin: 10px auto;
 	font-size: .75em;
 	max-width: 500px;
@@ -224,7 +227,7 @@ q::after {
 	border: 2px solid rgba(242,119,176,1);
 	box-shadow: 0 1px 5px rgba(34, 25, 25, 0.4);
 	display: inline-block;
- 	column-break-inside: avoid;
+ 	/*column-break-inside: avoid;*/
 }
 .columns figure img {
 	z-index: 1;
@@ -308,4 +311,54 @@ q::after {
 
 
 
+/*MEDIA QUERIES*/
 
+@media only screen and (max-device-width: 480px) {
+  body {
+	background-image: url(images/eiffel.png);
+	background-attachment: fixed; 
+	background-size: 100%;
+	background-position: center;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+}
+	h1 {
+		color: white;
+		margin: 0 auto;
+		font-size: 1.5em;
+		/*padding: 10px;*/
+	}
+	.paragraph {
+		color: white;
+		position: relative;
+		text-align: justify;
+		width: 100%;
+		margin: 0 auto;
+		border-radius: 0px;
+		padding: 10px;
+		font-size: .75em;
+		line-height: 1.5em;
+		background: rgba(215,189,234,0.75);
+	}
+	.image {
+		position: relative;
+		margin: 0 auto;
+		height: auto;
+		max-width: 100% !important;
+	}
+	.quote {
+		margin: 0 auto;
+		color: white;
+		background: rgba(215,189,234,0.75);
+		width: 75%;
+	}
+	.vapor-text #main, .vapor-text #top, .vapor-text #bot{
+		color: white;
+	}
+	.columns {
+		margin-top: 10px;
+	}
+	.columns figure {
+		padding-right: 10px;
+	}
+}
